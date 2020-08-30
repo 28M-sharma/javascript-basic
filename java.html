@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>
+js
+</title>
+<script language="JavaScript">
+function Setsize(size) {
+document.frm1.txtResult.value="you have selected size " + size + " ."
+}
+ function colour()
+{
+var color
+color ="You have selected colours:     "
+    if (document.frm1.chk1.checked)
+    {
+	    color=color+"black  " 
+    }
+	if (document.frm1.chk2.checked)
+	{
+		color=color+"white  "
+	}
+	document.frm1.txt2.value=color
+}
+  </script>
+  </head>
+  <body>
+	<pre>
+  <h4>Select your T-shirt Size</h4>
+ <form name="frm1">
+ small   :   <input type="radio" name="rad" onclick="Setsize('small')" >
+ Medium  :   <input type="radio" name="rad" onclick="Setsize('Medium')" >
+ Large   :   <input type="radio" name="rad" onclick="Setsize('Large')" >
+ X-Large :   <input type="radio" name="rad" onclick="Setsize('X-Large')" >
+ 
+<h2>Select your T shirt </h2>
+Black:       <input type="checkbox" name="chk1" onclick="colour()">
+white:       <input type="checkbox" name="chk2" onclick="colour()">
+
+
+
+<h2>you have selected</h2>
+<input type="text"  name="txtResult" size="50">
+<input type="text"  name="txt2" size="50">
+</form>
+</pre>
+	</body>
+</html>
